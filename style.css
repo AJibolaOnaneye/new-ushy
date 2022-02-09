@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body{
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.container {
+  padding-left: 5rem;
+}
+
+.header-wrapper{
+  margin-top: 2.5rem;
+}
+
+.home-main-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-wrapper {
+margin-top: 25rem;
+/* margin-bottom: 10rem; */
+}
+
+.title {
+  font-size: 14px;
+  color: #9a9fbf;
+  letter-spacing: -0.025rem;
+  font-weight: 500;
+}
+
+.middle-title {
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: -0.1rem;
+  width: 690px;
+  word-spacing: -0.3rem;
+  margin: .5rem 0rem;
+}
+
+.end {
+  font-size: 18px;
+  letter-spacing: -0.025rem;
+  font-weight: 400;
+  width: 667px;
+  margin: .5rem 0rem;
+}
+
+.title-launch {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9a9fbf;
+  letter-spacing: -0.025rem;
+  margin: 1rem 0rem;
+}
+
+.form-box {
+  /* border-radius: 0.5rem; */
+}
+
+.input-box {
+  font-size: 18px;
+  color: #000;
+  padding: 1rem 1.5rem;
+  border-width: 1px;
+  border-color: rgba(154, 159, 191, 0.2);
+  outline: none;
+  max-width: 100%;
+  width: 34rem;
+  margin-right: 15px;
+  border-radius: 6px;
+  font-family: inherit;
+  letter-spacing: -0.025rem;
+}
+
+
+.input-button {
+  color: #ffffff;
+  padding: 1rem 1rem;
+  font-size: 18px;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgba(1, 132, 251, 1);
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: -0.025rem;
+  
+}
+
+::-webkit-input-placeholder {
+  color: #9a9fbf;
+}
+
+.input-button:hover {
+  background-color: #000;
+  color: #ececec;
+  cursor: pointer;
+}
+
+.image-wrap {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.img {
+  /* height: auto; */
+}
+
+
+/* MEDIA QUERIES */
+/* SCREEN SIZES FOR 0 TO 319PX */
+@media only screen and (min-width: 0px) and (max-width:319px) and (-webkit-min-device-pixel-ratio: 2) {
+body{
+  box-sizing: border-box;
+}
+
+  .container{
+    padding-left: 1rem;
+    overflow: hidden;
+  }
+  
+  .header-wrapper{
+    margin-top: 1.5rem;
+  }
+
+  .logo{
+    width: 5rem;
+  }
+
+.text-wrapper{
+  margin-top: 9.5rem;
+  width: 20.5rem;
+  z-index: 1;
+}
+
+.middle-title{
+  display: flex;
+  width: 16rem;
+  font-style: normal;
+font-weight: bold;
+font-size: 3rem;
+line-height: 1.2;
+letter-spacing: -0.2px;
+}
+
+.end{
+  display: flex;
+  width: 16rem;
+  font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.5;
+letter-spacing: -0.2px;
+}
+
+.title-launch{
+  font-size: 12px;
+}
+
+.form-box{
+  text-align: right;
+ }
+
+ .form{
+  width: 85vw;
+}
+
+.input-box {
+  width: 85vw;
+  font-size: 13px;
+}
+
+.input-button {
+  margin-top: .5rem;
+  margin-right: 1rem;
+}
+
+.img {
+  max-width: 100%;
+  width: 351.41px;
+  height: 492.38px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.image-wrap {
+  flex-direction: row;
+  justify-content: center;
+  background: linear-gradient(0deg, rgb(255, 255, 255) 48%, rgba(255, 255, 255, 0.507) 100%) ;
+  position: absolute;
+  top: 7rem;
+}
+}
+
+/* SCREEN SIZES FOR 320 TO 540PX */
+@media only screen and (min-width: 320px) and (max-width:540px) and (-webkit-min-device-pixel-ratio: 2){
+  body{
+    box-sizing: border-box;
+  }
+  
+    .container{
+      padding-left: 1rem;
+      overflow: hidden;
+    }
+
+    .header-wrapper{
+      margin-top: 1.5rem;
+    }
+
+    .logo{
+      width: 8rem;
+    }
+
+    .text-wrapper{
+      position: fixed;
+      bottom: 0;
+      width: 20.5rem;
+      z-index: 1;
+      margin-bottom: 2rem;
+    }
+
+    .middle-title{
+      display: flex;
+      width: 20rem;
+      font-style: normal;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.2px;
+    }
+    
+    .end{
+      display: flex;
+      width: 19.6rem;
+      font-style: normal;
+     font-weight: normal;
+     font-size: 1.05rem;
+     line-height: 1.5;
+     letter-spacing: -0.2px;
+     padding-right: 10px;
+    }
+    
+    .title-launch{
+      font-size: 0.85rem;
+    }
+    .form{
+      width: 85vw;
+    }
+    
+    .form-box{
+     text-align: right;
+     margin-right: 2rem;
+    }
+
+    .input-box {
+      width: 85vw;
+      font-size: 13px;
+
+    }
+
+    .input-button {
+      margin-top: .5rem;
+      /* float: right; */
+    }
+
+    .img {
+      max-width: 100%;
+      /* width: 351.41px; */
+      /* height: 492.38px; */
+      height: auto;
+      z-index: -1;
+      overflow: hidden;
+    }
+    
+    .image-wrap {
+      flex-direction: row;
+      justify-content: center;
+      background: linear-gradient(0deg, rgb(255, 255, 255) 48%, rgba(255, 255, 255, 0.507) 100%) ;
+      position: absolute;
+      top: 6.5rem;
+       right: 0;
+    }
+}
+
+
+/* SCREEN SIZES FOR 541px TO 767PX */
+@media only screen and (min-width: 541px) and (max-width:767px) and (-webkit-min-device-pixel-ratio: 2){
+  body{
+    box-sizing: border-box;
+  }
+  
+    .container{
+      padding-left: 2rem;
+      overflow: hidden;
+    }
+
+    .header-wrapper{
+      margin-top: 2rem;
+    }
+
+    .logo{
+      width: 9rem;
+    }
+
+    .text-wrapper{
+      position: fixed;
+      bottom: 0;
+      width: 24rem;
+      z-index: 1;
+      margin-bottom: 2rem;
+    }
+
+    .middle-title{
+      display: flex;
+      width: 21rem;
+      font-style: normal;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.2px;
+    }
+    
+    .end{
+      display: flex;
+      width: 30rem;
+      font-style: normal;
+     font-weight: normal;
+     font-size: 1.2rem;
+     line-height: 1.5;
+     letter-spacing: -0.2px;
+     padding-right: 10px;
+    }
+    
+    .title-launch{
+      font-size: 0.9rem;
+    }
+    .form{
+      width: 85vw;
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .form-box{
+     text-align: right;
+     margin-right: 2rem;
+    }
+
+    .input-box {
+      width: 65vw;
+      font-size: 1rem;
+
+    }
+
+    .input-button {
+      margin-top: .5rem;
+      /* float: right; */
+    }
+
+    .img {
+      max-width: 100%;
+      /* width: 351.41px; */
+      /* height: 492.38px; */
+      height: auto;
+      z-index: -1;
+      overflow: hidden;
+    }
+    
+    .image-wrap {
+      flex-direction: row;
+      justify-content: center;
+      background: linear-gradient(0deg, rgb(255, 255, 255) 48%, rgba(255, 255, 255, 0.507) 100%) ;
+      position: absolute;
+      top: 6.5rem;
+      right: 0;
+    }
+}
+
+/* SCREEN SIZES FOR 768px TO 1024X */
+@media only screen and (min-width: 768px) and (max-width:1023px) and (-webkit-min-device-pixel-ratio: 2){
+  body{
+    box-sizing: border-box;
+  }
+  
+    .container{
+      padding-left: 2rem;
+      overflow: hidden;
+    }
+
+    .header-wrapper{
+      margin-top: 2.5rem;
+    }
+
+    .logo{
+      width: 11rem;
+    }
+
+    .text-wrapper{
+      position: fixed;
+      bottom: 0;
+      width: 25rem;
+      z-index: 1;
+      margin-bottom: 5rem;
+    }
+
+    .middle-title{
+      display: flex;
+      width: 25rem;
+      font-style: normal;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.2px;
+    }
+    
+    .end{
+      display: flex;
+      width: 28rem;
+      font-style: normal;
+     font-weight: normal;
+     font-size: 1.2rem;
+     line-height: 1.5;
+     letter-spacing: -0.2px;
+     padding-right: 10px;
+    }
+    
+    .title-launch{
+      font-size: 0.9rem;
+    }
+    .form{
+      width: 85vw;
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .form-box{
+     text-align: right;
+     margin-right: 2rem;
+    }
+
+    .input-box {
+      width: 65vw;
+      font-size: 1rem;
+
+    }
+
+    .input-button {
+      margin-top: .5rem;
+    }
+
+    .img {
+      max-width: 100%;
+      height: auto;
+      z-index: -1;
+      overflow: hidden;
+    }
+    
+    .image-wrap {
+      flex-direction: row;
+      justify-content: center;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.918) 10%, rgba(255, 255, 255, 0.507) 100%) ;
+      position: absolute;
+      top: 12rem;
+     right: 0;
+     bottom: 0;
+    }
+}
+
